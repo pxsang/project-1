@@ -1,0 +1,40 @@
+{
+	"extends": ["nau-react", "prettier"],
+	"rules": {
+		"dot-notation"                      : 0,
+		"prefer-arrow-callback"             : 0,
+		"no-alert"                          : 0,
+		"import/extensions"                 : 0,
+		"import/no-extraneous-dependencies" : 0,
+		"import/prefer-default-export"      : 0,
+		"react/prefer-stateless-function"   : 0,
+		"react-native/split-platform-components" : 2
+	},
+	"globals": {
+		"Trianglify": true
+	},
+	"env": {
+		"browser": true,
+		"meteor": true,
+		"jquery": true,
+		"es6": true
+	},
+	"plugins": ["react", "react-native"],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"impliedStrict": true,
+			"jsx": true,
+			"classes": true
+		}
+	},
+	"settings": {
+		"import/resolver": {
+			"node" : {
+				"extensions": [".js", ".android.js", ".ios.js"]
+			}
+		}
+	}
+}

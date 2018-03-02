@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "sdkVersion": "22.0.0",
+    "name": "Nau Jukebox Mobile App",
+    "slug": "nau-jukebox-mobile-app",
+    "icon": "src/images/app-icon.png",
+    "privacy": "public"
+  }
+}

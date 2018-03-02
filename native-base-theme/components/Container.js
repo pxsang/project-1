@@ -1,0 +1,14 @@
+import { Platform, Dimensions } from 'react-native';
+
+const deviceHeight = Dimensions.get('window').height;
+const Container = () => {
+	const theme = {
+		flex: 1,
+		backgroundColor: 'white',
+		height: Platform.OS === 'ios' ? deviceHeight : deviceHeight - 20,
+	};
+
+	return theme;
+};
+
+export default Container;
